@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Nomad Coders" />
-    <meta name="description" content="Welcome to my kakao Clone" />
-    <title>This is my title</title>
-    <body>
-      <section>
-        <header id="headerNumberOne" class="defaultHeader">
-          <h1>Title of sectoin</h1>
-        </header>
-      </section>
-
-      <div>
-        <header id="differernHeader" class="defaultHeader">
-          Title of the unkonwn container
-        </header>
-      </div>
-    </body>
+    <meta name="viewport" content="width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transpormation</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+        animation: 1.5s scaletim ease-in-out;
+      }
+      @@keyframes scaletim {
+        from {
+          transporm: none;
+        }
+        to {
+          transporm: rotate(1turn) scale(5, 5);
+        }
+      }
+    </style>
   </head>
+  <body>
+    <div class="box"></div>
+  </body>
 </html>
